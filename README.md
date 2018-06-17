@@ -33,6 +33,7 @@ USAGE
 <!-- commands -->
 * [`react-lib-scripts hello`](#react-lib-scripts-hello)
 * [`react-lib-scripts help [COMMAND]`](#react-lib-scripts-help-command)
+* [`react-lib-scripts start`](#react-lib-scripts-start)
 
 ## `react-lib-scripts hello`
 
@@ -68,4 +69,19 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.0.5/src/commands/help.ts)_
+
+## `react-lib-scripts start`
+
+Start lib development flow
+
+```
+USAGE
+  $ react-lib-scripts start
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.1/src/commands/start.js)_
 <!-- commandsstop -->
