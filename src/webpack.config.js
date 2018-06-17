@@ -11,11 +11,11 @@ const babelRcOnBase = path.resolve(cwd, '.babelrc')
 let babelRcPath = path.resolve(__dirname, '.babelrc')
 
 if (fs.existsSync(babelRcOnBase)) {
-  console.info('.babelrc exists. react-lib-scripts will use this one.')
+  console.log('> .babelrc exists. react-lib-scripts will use this one.')
   babelRcPath = babelRcOnBase
 } else {
   console.log(
-    '.babelrc does not exists. react-lib-scripts will use default config.'
+    '> .babelrc does not exists. react-lib-scripts will use default config.'
   )
 }
 
