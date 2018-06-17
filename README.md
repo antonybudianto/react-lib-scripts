@@ -23,6 +23,8 @@ You can put the command as npm scripts.
 example:
 "start": "react-lib-scripts start",
 "build": "react-lib-scripts build"
+
+Note: `NODE_ENV` environment variable is required.
 ```
 # Commands
 <!-- commands -->
@@ -43,7 +45,7 @@ DESCRIPTION
   Create library bundle
 ```
 
-_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.9/src/commands/build.js)_
+_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.10/src/commands/build.js)_
 
 ## `react-lib-scripts help [COMMAND]`
 
@@ -75,7 +77,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.9/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.10/src/commands/start.js)_
 <!-- commandsstop -->
 # Customize
 - Babel
