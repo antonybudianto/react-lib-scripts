@@ -1,9 +1,23 @@
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
+const fs = require('fs')
+
 const devMode = process.env.NODE_ENV === 'development'
 const cwd = process.cwd()
 
 const pcwd = path.resolve(cwd)
+
+const babelRcOnBase = path.resolve(cwd, '.babelrc')
+let babelRcPath = path.resolve(__dirname, '.babelrc')
+
+if (fs.existsSync(babelRcOnBase)) {
+  console.info('.babelrc exists. react-lib-scripts will use this one.')
+  babelRcPath = babelRcOnBase
+} else {
+  console.log(
+    '.babelrc does not exists. react-lib-scripts will use default config.'
+  )
+}
 
 const config = {
   context: pcwd,
@@ -24,7 +38,7 @@ const config = {
         loader: 'babel-loader',
         options: {
           babelrc: false,
-          extends: path.resolve(__dirname, '.babelrc'),
+          extends: babelRcPath,
         },
       },
       {
