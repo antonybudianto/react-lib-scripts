@@ -54,7 +54,6 @@
   },
   "repository": "antonybudianto/react-lib-scripts",
   "scripts": {
-    "start": "webpack --config=src/webpack.config.js --watch",
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
     "posttest": "eslint .",
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
