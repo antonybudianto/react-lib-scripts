@@ -1,13 +1,7 @@
 const { Command } = require('@oclif/command')
-const { spawn } = require('child_process')
 const webpack = require('webpack')
-const path = require('path')
 
-const cwd = process.cwd()
 const config = require('../webpack.config')
-
-// console.log('path cwd', path.resolve(cwd))
-// console.log('path dirname', path.resolve(__dirname))
 
 class BuildCommand extends Command {
   async run() {
