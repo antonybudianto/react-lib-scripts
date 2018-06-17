@@ -9,10 +9,20 @@ All-in-one CLI for building React Library
 [![License](https://img.shields.io/npm/l/react-lib-scripts.svg)](https://github.com/antonybudianto/react-lib-scripts/blob/master/package.json)
 
 <!-- toc -->
+* [Stacks](#stacks)
 * [Usage](#usage)
 * [Commands](#commands)
 * [Customize](#customize)
 <!-- tocstop -->
+# Stacks
+Tech stacks used:
+- CLI
+  - OCLIF
+- Bundler
+  - Webpack 4
+    - css-loader, iso-morphic-style-loader, webpack-node-externals
+  - Babel
+
 # Usage
 ```sh-session
 $ npm install -D react-lib-scripts
@@ -45,7 +55,7 @@ DESCRIPTION
   Create library bundle
 ```
 
-_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.11/src/commands/build.js)_
+_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.12/src/commands/build.js)_
 
 ## `react-lib-scripts help [COMMAND]`
 
@@ -77,7 +87,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.11/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.12/src/commands/start.js)_
 <!-- commandsstop -->
 # Customize
 - Babel
