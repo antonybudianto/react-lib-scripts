@@ -1,7 +1,7 @@
 react-lib-scripts
 =================
 
-React lib scripts
+All-in-one CLI for building React Library
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/react-lib-scripts.svg)](https://npmjs.org/package/react-lib-scripts)
@@ -14,19 +14,16 @@ React lib scripts
 * [Customize](#customize)
 <!-- tocstop -->
 # Usage
-<!-- usage -->
 ```sh-session
-$ npm install -g react-lib-scripts
-$ react-lib-scripts COMMAND
-running command...
-$ react-lib-scripts (-v|--version|version)
-react-lib-scripts/0.0.6 darwin-x64 node-v8.11.2
-$ react-lib-scripts --help [COMMAND]
-USAGE
-  $ react-lib-scripts COMMAND
-...
+$ npm install -D react-lib-scripts
 ```
-<!-- usagestop -->
+
+```
+You can put the command as npm scripts.
+example:
+"start": "react-lib-scripts start",
+"build": "react-lib-scripts build"
+```
 # Commands
 <!-- commands -->
 * [`react-lib-scripts build`](#react-lib-scripts-build)
@@ -46,7 +43,7 @@ DESCRIPTION
   Create library bundle
 ```
 
-_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.6/src/commands/build.js)_
+_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.9/src/commands/build.js)_
 
 ## `react-lib-scripts help [COMMAND]`
 
@@ -78,7 +75,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.6/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.9/src/commands/start.js)_
 <!-- commandsstop -->
 # Customize
 - Babel
