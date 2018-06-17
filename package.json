@@ -1,0 +1,60 @@
+{
+  "name": "react-lib-scripts",
+  "description": "React lib scripts",
+  "version": "0.0.1",
+  "author": "Antony Budianto @antonybudianto",
+  "bin": {
+    "react-lib-scripts": "./bin/run"
+  },
+  "bugs": "https://github.com/antonybudianto/react-lib-scripts/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react-app": "^3.1.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "eslint": "^4",
+    "eslint-config-oclif": "^1",
+    "globby": "^8",
+    "prettier": "1.13.5"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/antonybudianto/react-lib-scripts",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "react-lib-scripts",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "antonybudianto/react-lib-scripts",
+  "scripts": {
+    "start": "webpack --config=src/webpack.config.js --watch",
+    "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}

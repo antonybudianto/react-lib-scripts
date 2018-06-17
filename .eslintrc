@@ -1,0 +1,7 @@
+{
+  "extends": "oclif",
+  "rules": {
+    "object-curly-spacing": 0,
+    "no-console": 0
+  }
+}
