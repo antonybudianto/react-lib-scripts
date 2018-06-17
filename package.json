@@ -1,7 +1,7 @@
 {
   "name": "react-lib-scripts",
   "description": "React lib scripts",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Antony Budianto @antonybudianto",
   "bin": {
     "react-lib-scripts": "./bin/run"
@@ -41,7 +41,8 @@
     "/bin",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json",
-    "/src"
+    "/src",
+    "LICENSE"
   ],
   "homepage": "https://github.com/antonybudianto/react-lib-scripts",
   "keywords": [
