@@ -11,6 +11,7 @@ React lib scripts
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
+* [Customize](#customize)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
@@ -19,7 +20,7 @@ $ npm install -g react-lib-scripts
 $ react-lib-scripts COMMAND
 running command...
 $ react-lib-scripts (-v|--version|version)
-react-lib-scripts/0.0.5 darwin-x64 node-v8.11.2
+react-lib-scripts/0.0.6 darwin-x64 node-v8.11.2
 $ react-lib-scripts --help [COMMAND]
 USAGE
   $ react-lib-scripts COMMAND
@@ -45,7 +46,7 @@ DESCRIPTION
   Create library bundle
 ```
 
-_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.5/src/commands/build.js)_
+_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.6/src/commands/build.js)_
 
 ## `react-lib-scripts help [COMMAND]`
 
@@ -77,5 +78,16 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.5/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.6/src/commands/start.js)_
 <!-- commandsstop -->
+# Customize
+- Babel
+  - You can put `.babelrc` in the root of your package
+- Webpack
+  - Create `rls.config.js`
+  - Copy and paste following:
+    ```js
+    module.exports = {
+      modifyWebpack: (config) => config
+    }
+    ```
