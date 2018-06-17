@@ -5,9 +5,6 @@ React lib scripts
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/react-lib-scripts.svg)](https://npmjs.org/package/react-lib-scripts)
-[![CircleCI](https://circleci.com/gh/antonybudianto/react-lib-scripts/tree/master.svg?style=shield)](https://circleci.com/gh/antonybudianto/react-lib-scripts/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/antonybudianto/react-lib-scripts?branch=master&svg=true)](https://ci.appveyor.com/project/antonybudianto/react-lib-scripts/branch/master)
-[![Codecov](https://codecov.io/gh/antonybudianto/react-lib-scripts/branch/master/graph/badge.svg)](https://codecov.io/gh/antonybudianto/react-lib-scripts)
 [![Downloads/week](https://img.shields.io/npm/dw/react-lib-scripts.svg)](https://npmjs.org/package/react-lib-scripts)
 [![License](https://img.shields.io/npm/l/react-lib-scripts.svg)](https://github.com/antonybudianto/react-lib-scripts/blob/master/package.json)
 
