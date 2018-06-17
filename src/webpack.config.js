@@ -71,6 +71,7 @@ if (fs.existsSync(rls)) {
     if (!webpackConfig) {
       console.warn('> modifyWebpack should return config.')
     } else {
+      console.log('> Webpack modify is applied.')
       finalConfig = webpackConfig
     }
   }
