@@ -1,13 +1,9 @@
-// const webpack = require('webpack')
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
 const devMode = process.env.NODE_ENV === 'development'
 const cwd = process.cwd()
 
 const pcwd = path.resolve(cwd)
-const dcwd = path.resolve(__dirname)
-console.log('wp app cwd: ', pcwd)
-console.log('wp app __dir: ', dcwd)
 
 const config = {
   context: pcwd,

@@ -6,8 +6,8 @@ const path = require('path')
 const cwd = process.cwd()
 const config = require('../webpack.config')
 
-console.log('path cwd', path.resolve(cwd))
-console.log('path dirname', path.resolve(__dirname))
+// console.log('path cwd', path.resolve(cwd))
+// console.log('path dirname', path.resolve(__dirname))
 
 class StartCommand extends Command {
   async run() {
@@ -19,12 +19,24 @@ class StartCommand extends Command {
       },
       (err, stats) => {
         if (err) {
-          this.error(err)
+          console.error(err.stack || err)
+          if (err.details) {
+            console.error(err.details)
+          }
+          return
         }
-        this.log('got it2')
+
+        const info = stats.toJson()
+
+        if (stats.hasErrors()) {
+          console.error(info.errors)
+        }
+
+        if (stats.hasWarnings()) {
+          console.warn(info.warnings)
+        }
         console.log(
           stats.toString({
-            chunks: false, // Makes the build much quieter
             colors: true, // Shows colors in the console
           })
         )
