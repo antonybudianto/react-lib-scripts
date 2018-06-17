@@ -3,6 +3,7 @@
   "rules": {
     "object-curly-spacing": 0,
     "no-console": 0,
-    "no-negated-condition": 0
+    "no-negated-condition": 0,
+    "node/no-unsupported-features": 0
   }
 }
