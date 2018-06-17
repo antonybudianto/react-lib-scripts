@@ -9,6 +9,7 @@ const pcwd = path.resolve(cwd)
 
 const babelRcOnBase = path.resolve(cwd, '.babelrc')
 let babelRcPath = path.resolve(__dirname, '.babelrc')
+const rls = path.resolve(cwd, 'rls.config.js')
 
 if (fs.existsSync(babelRcOnBase)) {
   console.log('> .babelrc exists. react-lib-scripts will use this one.')
@@ -59,4 +60,20 @@ const config = {
   plugins: [],
 }
 
-module.exports = config
+let finalConfig = config
+
+if (fs.existsSync(rls)) {
+  console.log('> rls.config.js exists. Configuration applied.')
+  const rlsConfig = require(rls)
+
+  if (rlsConfig.modifyWebpack) {
+    const webpackConfig = rlsConfig.modifyWebpack(config)
+    if (!webpackConfig) {
+      console.warn('> modifyWebpack should return config.')
+    } else {
+      finalConfig = webpackConfig
+    }
+  }
+}
+
+module.exports = finalConfig
