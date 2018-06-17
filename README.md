@@ -22,7 +22,7 @@ $ npm install -g react-lib-scripts
 $ react-lib-scripts COMMAND
 running command...
 $ react-lib-scripts (-v|--version|version)
-react-lib-scripts/0.0.1 darwin-x64 node-v8.11.2
+react-lib-scripts/0.0.2 darwin-x64 node-v8.11.2
 $ react-lib-scripts --help [COMMAND]
 USAGE
   $ react-lib-scripts COMMAND
@@ -31,27 +31,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`react-lib-scripts hello`](#react-lib-scripts-hello)
+* [`react-lib-scripts build`](#react-lib-scripts-build)
 * [`react-lib-scripts help [COMMAND]`](#react-lib-scripts-help-command)
 * [`react-lib-scripts start`](#react-lib-scripts-start)
 
-## `react-lib-scripts hello`
+## `react-lib-scripts build`
 
-Describe the command here
+Create library bundle
 
 ```
 USAGE
-  $ react-lib-scripts hello
-
-OPTIONS
-  -n, --name=name  name to print
+  $ react-lib-scripts build
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Create library bundle
 ```
 
-_See code: [src/commands/hello.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.1/src/commands/hello.js)_
+_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.2/src/commands/build.js)_
 
 ## `react-lib-scripts help [COMMAND]`
 
@@ -83,5 +80,5 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.1/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.2/src/commands/start.js)_
 <!-- commandsstop -->
