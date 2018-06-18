@@ -17,7 +17,7 @@ function resolveDir(name) {
 
 function loadConfigOnBase(fileName) {
   const configOnBase = resolveCwd(fileName)
-  const defaultConfig = resolveDir('.babelrc')
+  const defaultConfig = resolveDir(fileName)
 
   if (fs.existsSync(configOnBase)) {
     console.log(`> "${fileName}" exists. react-lib-scripts will use this one.`)
