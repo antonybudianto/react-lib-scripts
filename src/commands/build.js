@@ -27,6 +27,7 @@ class BuildCommand extends Command {
 
       console.log(
         stats.toString({
+          modules: false,
           colors: true, // Shows colors in the console
         })
       )

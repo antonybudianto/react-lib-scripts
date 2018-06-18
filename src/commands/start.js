@@ -8,6 +8,7 @@ class StartCommand extends Command {
     const ins = webpack(config)
     ins.watch(
       {
+        ignored: /node_modules/,
         aggregateTimeout: 300,
         poll: undefined,
       },
@@ -31,6 +32,7 @@ class StartCommand extends Command {
         }
         console.log(
           stats.toString({
+            modules: false,
             colors: true, // Shows colors in the console
           })
         )
