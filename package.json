@@ -1,7 +1,7 @@
 {
   "name": "react-lib-scripts",
   "description": "React lib scripts",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "author": "Antony Budianto @antonybudianto",
   "bin": {
     "react-lib-scripts": "./bin/run"
