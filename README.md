@@ -33,7 +33,6 @@ $ npm install -D react-lib-scripts
 
 ```
 You can put the command as npm scripts.
-example:
 "start": "react-lib-scripts start",
 "build": "react-lib-scripts build"
 
