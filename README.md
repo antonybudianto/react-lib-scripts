@@ -41,6 +41,16 @@ Note:
 - Node 8+ supported
 - `NODE_ENV` environment variable is required.
 ```
+
+```
+Set following fields on your package.json
+"main": "lib/index.js",
+"files": [
+  "lib",
+  ...
+],
+```
+
 # Commands
 <!-- commands -->
 * [`react-lib-scripts build`](#react-lib-scripts-build)
