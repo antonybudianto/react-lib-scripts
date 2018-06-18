@@ -69,7 +69,7 @@ DESCRIPTION
   Create library bundle
 ```
 
-_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.16/src/commands/build.js)_
+_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.17/src/commands/build.js)_
 
 ## `react-lib-scripts help [COMMAND]`
 
@@ -101,7 +101,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.16/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.17/src/commands/start.js)_
 <!-- commandsstop -->
 # Customize
 - Babel

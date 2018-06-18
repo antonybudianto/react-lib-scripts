@@ -1,7 +1,7 @@
 {
   "name": "react-lib-scripts",
   "description": "React lib scripts",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "author": "Antony Budianto @antonybudianto",
   "bin": {
     "react-lib-scripts": "./bin/run"
@@ -49,7 +49,12 @@
   ],
   "homepage": "https://github.com/antonybudianto/react-lib-scripts",
   "keywords": [
-    "oclif"
+    "oclif",
+    "reactjs",
+    "lib",
+    "library",
+    "scripts",
+    "cli"
   ],
   "license": "MIT",
   "main": "src/index.js",
