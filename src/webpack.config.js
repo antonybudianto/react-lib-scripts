@@ -62,6 +62,10 @@ const config = {
         },
       },
       {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'url-loader',
+      },
+      {
         test: /\.css$/,
         use: [
           'iso-morphic-style-loader',

@@ -22,6 +22,7 @@ Tech stacks used:
   - Webpack 4
     - css-loader, iso-morphic-style-loader
     - postcss-loader (autoprefixer)
+    - url-loader (all images will be base64)
     - webpack-node-externals
   - Babel
 
