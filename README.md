@@ -36,7 +36,9 @@ example:
 "start": "react-lib-scripts start",
 "build": "react-lib-scripts build"
 
-Note: `NODE_ENV` environment variable is required.
+Note:
+- Node 8+ supported
+- `NODE_ENV` environment variable is required.
 ```
 # Commands
 <!-- commands -->
