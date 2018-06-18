@@ -20,7 +20,9 @@ Tech stacks used:
   - OCLIF
 - Bundler
   - Webpack 4
-    - css-loader, iso-morphic-style-loader, webpack-node-externals
+    - css-loader, iso-morphic-style-loader
+    - postcss-loader (autoprefixer)
+    - webpack-node-externals
   - Babel
 
 # Usage
@@ -55,7 +57,7 @@ DESCRIPTION
   Create library bundle
 ```
 
-_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.12/src/commands/build.js)_
+_See code: [src/commands/build.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.13/src/commands/build.js)_
 
 ## `react-lib-scripts help [COMMAND]`
 
@@ -87,7 +89,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.12/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-scripts/blob/v0.0.13/src/commands/start.js)_
 <!-- commandsstop -->
 # Customize
 - Babel
@@ -100,3 +102,5 @@ _See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-s
       modifyWebpack: (config) => config
     }
     ```
+- PostCSS
+  - You can put `postcss.config.js` in the root of your package

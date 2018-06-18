@@ -7,17 +7,36 @@ const cwd = process.cwd()
 
 const pcwd = path.resolve(cwd)
 
-const babelRcOnBase = path.resolve(cwd, '.babelrc')
-let babelRcPath = path.resolve(__dirname, '.babelrc')
-const rls = path.resolve(cwd, 'rls.config.js')
+function resolveCwd(name) {
+  return path.resolve(cwd, name)
+}
 
-if (fs.existsSync(babelRcOnBase)) {
-  console.log('> .babelrc exists. react-lib-scripts will use this one.')
-  babelRcPath = babelRcOnBase
-} else {
+function resolveDir(name) {
+  return path.resolve(__dirname, name)
+}
+
+function loadConfigOnBase(fileName) {
+  const configOnBase = resolveCwd(fileName)
+  const defaultConfig = resolveDir('.babelrc')
+
+  if (fs.existsSync(configOnBase)) {
+    console.log(`> "${fileName}" exists. react-lib-scripts will use this one.`)
+    return configOnBase
+  }
   console.log(
-    '> .babelrc does not exists. react-lib-scripts will use default config.'
+    `> "${fileName}" doesn't exist. react-lib-scripts will use default config.`
   )
+  return defaultConfig
+}
+
+let rlsConfig = {}
+const rls = resolveCwd('rls.config.js')
+let babelRcPath = loadConfigOnBase('.babelrc')
+let postcssPath = loadConfigOnBase('postcss.config.js')
+
+if (fs.existsSync(rls)) {
+  console.log('> rls.config.js exists. Configuration applied.')
+  rlsConfig = require(rls)
 }
 
 const config = {
@@ -49,8 +68,16 @@ const config = {
           {
             loader: 'css-loader',
             options: {
+              importLoaders: 1,
               minimize: true,
-              url: true,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: postcssPath,
+              },
             },
           },
         ],
@@ -62,18 +89,13 @@ const config = {
 
 let finalConfig = config
 
-if (fs.existsSync(rls)) {
-  console.log('> rls.config.js exists. Configuration applied.')
-  const rlsConfig = require(rls)
-
-  if (rlsConfig.modifyWebpack) {
-    const webpackConfig = rlsConfig.modifyWebpack(config)
-    if (!webpackConfig) {
-      console.warn('> modifyWebpack should return config.')
-    } else {
-      console.log('> Webpack modify is applied.')
-      finalConfig = webpackConfig
-    }
+if (rlsConfig.modifyWebpack) {
+  const webpackConfig = rlsConfig.modifyWebpack(config)
+  if (!webpackConfig) {
+    console.warn('> modifyWebpack should return config.')
+  } else {
+    console.log('> Webpack modify is applied.')
+    finalConfig = webpackConfig
   }
 }
 
