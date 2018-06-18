@@ -41,7 +41,7 @@ if (fs.existsSync(rls)) {
 
 const config = {
   context: pcwd,
-  devtool: devMode ? 'inline-source-map' : undefined,
+  devtool: devMode ? 'cheap-eval-source-map' : undefined,
   mode: devMode ? 'development' : 'production',
   entry: './src/index.js',
   output: {
