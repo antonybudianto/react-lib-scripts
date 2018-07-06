@@ -8,6 +8,8 @@ All-in-one CLI for building React Library
 [![Downloads/week](https://img.shields.io/npm/dw/react-lib-scripts.svg)](https://npmjs.org/package/react-lib-scripts)
 [![License](https://img.shields.io/npm/l/react-lib-scripts.svg)](https://github.com/antonybudianto/react-lib-scripts/blob/master/package.json)
 
+You can check [react-lib-starter](https://github.com/antonybudianto/react-lib-starter) for the usage.
+
 <!-- toc -->
 * [Stacks](#stacks)
 * [Usage](#usage)
