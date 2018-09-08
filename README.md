@@ -15,6 +15,7 @@ You can check [react-lib-starter](https://github.com/antonybudianto/react-lib-st
 * [Usage](#usage)
 * [Commands](#commands)
 * [Customize](#customize)
+* [Blog](#blog)
 <!-- tocstop -->
 # Stacks
 Tech stacks used:
@@ -118,3 +119,6 @@ _See code: [src/commands/start.js](https://github.com/antonybudianto/react-lib-s
     ```
 - PostCSS
   - You can put `postcss.config.js` in the root of your package
+  
+# Blog
+https://itnext.io/building-react-library-using-react-lib-scripts-eab6f0fd21f2
